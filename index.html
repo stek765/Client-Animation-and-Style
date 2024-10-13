@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Home Animation Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body>
+
+    <!-- div per le luci -->
+    <div class="light-container">
+        <div class="light-ray light-ray-1"></div>
+        <div class="light-ray light-ray-2"></div>
+        <div class="light-ray light-ray-3"></div>
+    </div>
+
+    <!-- Barra di navigazione -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+            <li><a href="#play" class="nav-link" data-target="play">Play</a></li>
+            <li><a href="#store" class="nav-link" data-target="store">Store</a></li>
+            <li><a href="#profile" class="nav-link" data-target="profile">Profile</a></li>
+            <li><a href="#settings" class="nav-link" data-target="settings">Settings</a></li>
+        </ul>
+    </div>
+
+    <!-- Sezioni del contenuto -->
+    <div id="home" class="section active">
+        <h1>Welcome to the Client Home Animation Test</h1>
+        <p>Explore the features and have fun clicking</p>
+        <button class="actionBtn">Start Your Journey</button>
+    </div>
+
+    <div id="play" class="section">
+        <h1>Game Mode Selection</h1>
+        <p>Choose your game mode and begin the challenge!</p>
+    </div>
+
+    <div id="store" class="section">
+        <h1>Store</h1>
+        <p>Check out the latest things and more!</p>
+        <div style="margin-top: 20px;"> 
+        <img src="skin1.jpg" alt="Skin 1">
+        <img src="skin2.jpeg" alt="Skin 2">
+        <img src="skin3.jpg" alt="Skin 3">
+        </div>
+    </div>
+
+
+    <div id="profile" class="section">
+        <h1>Your Profile</h1>
+        <p>View your stats, achievements, and progress.</p>
+    </div>
+    
+    <!-- Menu laterale -->
+    <div class="side-menu">
+        <div class="menu-text" id="toggleMenu">OPEN</div>
+        <div class="side-panel" id="sidePanel">
+            <!-- Elementi visivi dentro la tendina -->
+            <h2>Welcome!</h2>
+            <div class="icons">
+                <div class="icon">&#9733;</div> 
+                <div class="icon">&#10084;</div>
+                <div class="icon">&#9730;</div> 
+            </div>
+            <!-- Pulsante CLOSE  -->
+            <div class="close-button" id="closeButton">CLOSE</div>
+        </div>
+    </div>
+    
+    
+
+    <div id="settings" class="section">
+        <h1>Settings</h1>
+        <p>Customize your experience</p>
+   
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
