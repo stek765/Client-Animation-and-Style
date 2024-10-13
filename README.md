@@ -8,5 +8,5 @@ preview:
 
 
 
-full:  [Guarda il video](mp4/video.mov)
+full:  [Guarda il video completo](mp4/video.mov)
 
